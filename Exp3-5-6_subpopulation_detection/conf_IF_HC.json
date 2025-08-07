@@ -1,0 +1,19 @@
+{
+    "output_file": "IF_HC",
+    "data_path": "../Data/PreProcessed/IF_HC/cleaned_norm_data.fth",
+    "harmonize": false,
+    "vars_use_harmony": "Plate",
+    "n_PCs_clustering": 10,
+    "feature_type" : "non-deep",
+    "channel_to_use": ["all"],
+    "color_range": 1,
+    "seed": 42,
+    "min_prob_accept": 0.6,
+    "nb_clusters": [2,25],
+    "chans_inorder" :  ["Nuclei","NFKB","CD45","ASC"],
+    "test_size": 0.3,
+    "save_crops": true,
+    "crop_image_width": 140,
+    "staining": "IF",
+    "numeric_cols_metadata": ["Global_Index", "X", "Y"]
+  }

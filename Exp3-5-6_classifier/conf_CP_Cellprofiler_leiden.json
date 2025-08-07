@@ -1,0 +1,17 @@
+{
+    "output_file": "CP_Cellprofiler_leiden",
+    "data_path": "../Data/PreProcessed/CP_Cellprofiler/cleaned_norm_data.fth",
+    "harmonize": false,
+    "vars_use_harmony": "Plate",
+    "n_PCs_clustering": 10,
+    "feature_type" : "non-deep",
+    "channel_to_use": ["all"],
+    "color_range": 1,
+    "seed": 42,
+    "clustering_params": {
+        "clustering_method": "leiden",
+        "range_resolution": [0.1, 5],
+        "distance_metric": "cosine"
+    },
+    "chans_inorder" : ["OrigDNA","OrigMito","OrigRNA","OrigER","OrigAGP"]
+  }
