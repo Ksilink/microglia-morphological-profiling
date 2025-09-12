@@ -24,6 +24,7 @@ CP_*/
 IF_*/
 !Data/PreProcessed/*
 !Data/Raw/*
+!Figures/*
 .Python
 build/
 develop-eggs/
