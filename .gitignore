@@ -10,7 +10,7 @@ __pycache__/
 *.html
 *.png
 *.npy
-*.csv
+# *.csv
 *.pptx
 *.jpg
 *.jpeg
@@ -153,6 +153,4 @@ dmypy.json
 # Large files
 .cos_sim/
 .go/
-PMDS/presentation/Exp01.cppipe
-PMDS/presentation/Exp01.cppipe
 .Rproj.user

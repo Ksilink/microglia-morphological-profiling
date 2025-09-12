@@ -1,0 +1,116 @@
+Classifier,Profile,F1 Score
+linear SVM,pca,0.893404783622175
+linear SVM,clustering_4,0.8298441775615689
+linear SVM,clustering_5,0.775100471819005
+linear SVM,clustering_6,0.7211912542794896
+linear SVM,clustering_7,0.7976364778538692
+linear SVM,clustering_8,0.8373477572727716
+linear SVM,clustering_9,0.8418929210382061
+linear SVM,clustering_10,0.8515332679352644
+linear SVM,clustering_11,0.8288014373584871
+linear SVM,clustering_12,0.8131000070279008
+linear SVM,clustering_13,0.855002195871761
+linear SVM,clustering_14,0.8993144697492523
+linear SVM,clustering_15,0.8742294219468133
+linear SVM,clustering_16,0.8384883090765444
+linear SVM,clustering_17,0.8456663162545516
+linear SVM,clustering_18,0.8530385736268089
+linear SVM,clustering_19,0.8319747582151674
+linear SVM,clustering_20,0.8252613025886683
+linear SVM,clustering_21,0.8530873895451901
+linear SVM,clustering_22,0.874000021717413
+linear SVM,clustering_23,0.8541545893719805
+linear SVM,clustering_24,0.8393716769164339
+linear SVM,clustering_25,0.8857226107226107
+Nearest Neighbors,pca,0.9296164704860357
+Nearest Neighbors,clustering_4,0.7998737744854489
+Nearest Neighbors,clustering_5,0.8425264816458693
+Nearest Neighbors,clustering_6,0.7620451992049088
+Nearest Neighbors,clustering_7,0.8075669177843091
+Nearest Neighbors,clustering_8,0.816783999928283
+Nearest Neighbors,clustering_9,0.8856951813394645
+Nearest Neighbors,clustering_10,0.8718855341964838
+Nearest Neighbors,clustering_11,0.9222872779394519
+Nearest Neighbors,clustering_12,0.8656744090360835
+Nearest Neighbors,clustering_13,0.8944664353360006
+Nearest Neighbors,clustering_14,0.9223654928002754
+Nearest Neighbors,clustering_15,0.9153360005533919
+Nearest Neighbors,clustering_16,0.8714909567083481
+Nearest Neighbors,clustering_17,0.901422957075131
+Nearest Neighbors,clustering_18,0.8243700199582552
+Nearest Neighbors,clustering_19,0.8229767744266842
+Nearest Neighbors,clustering_20,0.881325461977636
+Nearest Neighbors,clustering_21,0.8107603741022326
+Nearest Neighbors,clustering_22,0.9370994223168138
+Nearest Neighbors,clustering_23,0.8860144927536232
+Nearest Neighbors,clustering_24,0.8325879367546034
+Nearest Neighbors,clustering_25,0.8525273036142601
+RBF SVM,pca,0.9225140077313991
+RBF SVM,clustering_4,0.9015714720062546
+RBF SVM,clustering_5,0.8873718873718873
+RBF SVM,clustering_6,0.7797156296389033
+RBF SVM,clustering_7,0.8746502638531624
+RBF SVM,clustering_8,0.8937400039573952
+RBF SVM,clustering_9,0.8853954810397643
+RBF SVM,clustering_10,0.8568240524683356
+RBF SVM,clustering_11,0.9204055204055205
+RBF SVM,clustering_12,0.8579055204055205
+RBF SVM,clustering_13,0.9219146071319985
+RBF SVM,clustering_14,0.9219875776397516
+RBF SVM,clustering_15,0.9288711288711289
+RBF SVM,clustering_16,0.9079285931459845
+RBF SVM,clustering_17,0.9204784909132736
+RBF SVM,clustering_18,0.8926765585461237
+RBF SVM,clustering_19,0.8669191396365309
+RBF SVM,clustering_20,0.9435295139642966
+RBF SVM,clustering_21,0.8814074291248204
+RBF SVM,clustering_22,0.9293220145394058
+RBF SVM,clustering_23,0.8885098918794571
+RBF SVM,clustering_24,0.8783609385783299
+RBF SVM,clustering_25,0.9296406250754078
+LDA,pca,0.9085279937453851
+LDA,clustering_4,0.9015714720062545
+LDA,clustering_5,0.8807990318859885
+LDA,clustering_6,0.7580477859420741
+LDA,clustering_7,0.8676549778723692
+LDA,clustering_8,0.9008017816634561
+LDA,clustering_9,0.8627144583587415
+LDA,clustering_10,0.8241092241092242
+LDA,clustering_11,0.8767975974418807
+LDA,clustering_12,0.8215383823780408
+LDA,clustering_13,0.9135975135975136
+LDA,clustering_14,0.8705866114561767
+LDA,clustering_15,0.8791113304077873
+LDA,clustering_16,0.893172888817172
+LDA,clustering_17,0.8938180246796991
+LDA,clustering_18,0.8352853909375648
+LDA,clustering_19,0.8786663899707379
+LDA,clustering_20,0.9022438431134083
+LDA,clustering_21,0.8241651989761487
+LDA,clustering_22,0.9120134910053234
+LDA,clustering_23,0.808621364426991
+LDA,clustering_24,0.8388499865673779
+LDA,clustering_25,0.8435083558193056
+Naive Bayes,pca,0.9366701173222912
+Naive Bayes,clustering_4,0.8946391048564962
+Naive Bayes,clustering_5,0.8780832291701857
+Naive Bayes,clustering_6,0.745425809469577
+Naive Bayes,clustering_7,0.72626702001702
+Naive Bayes,clustering_8,0.8224967410474657
+Naive Bayes,clustering_9,0.8566058418232331
+Naive Bayes,clustering_10,0.8044049983328921
+Naive Bayes,clustering_11,0.8318204943204943
+Naive Bayes,clustering_12,0.8308918003404312
+Naive Bayes,clustering_13,0.9047625133195631
+Naive Bayes,clustering_14,0.8726273726273727
+Naive Bayes,clustering_15,0.8247049139802763
+Naive Bayes,clustering_16,0.8268250268250267
+Naive Bayes,clustering_17,0.8346152797927374
+Naive Bayes,clustering_18,0.8727084372607982
+Naive Bayes,clustering_19,0.8106456669691964
+Naive Bayes,clustering_20,0.7591494380710068
+Naive Bayes,clustering_21,0.8432810989332729
+Naive Bayes,clustering_22,0.8949198949198949
+Naive Bayes,clustering_23,0.8435850271228952
+Naive Bayes,clustering_24,0.7882044005153502
+Naive Bayes,clustering_25,0.8728996435439266

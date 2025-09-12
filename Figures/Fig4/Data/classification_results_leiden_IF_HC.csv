@@ -1,0 +1,106 @@
+Classifier,Profile,F1 Score
+linear SVM,pca,0.8806309431309431
+linear SVM,clustering_leiden_0.10,0.37013059152527844
+linear SVM,clustering_leiden_0.36,0.6410391623626918
+linear SVM,clustering_leiden_0.62,0.7021730287305873
+linear SVM,clustering_leiden_0.87,0.8090320307711613
+linear SVM,clustering_leiden_1.13,0.7898330534200099
+linear SVM,clustering_leiden_1.39,0.7114380867947273
+linear SVM,clustering_leiden_1.65,0.741792051764345
+linear SVM,clustering_leiden_1.91,0.720048415636651
+linear SVM,clustering_leiden_2.16,0.7816918977426224
+linear SVM,clustering_leiden_2.42,0.8109927492394154
+linear SVM,clustering_leiden_2.68,0.7486115213289127
+linear SVM,clustering_leiden_2.94,0.7920675996038314
+linear SVM,clustering_leiden_3.19,0.8148688750862663
+linear SVM,clustering_leiden_3.45,0.7993689402385055
+linear SVM,clustering_leiden_3.71,0.8115372670807454
+linear SVM,clustering_leiden_3.97,0.7535602682341813
+linear SVM,clustering_leiden_4.23,0.7989884511623643
+linear SVM,clustering_leiden_4.48,0.7734089461263375
+linear SVM,clustering_leiden_4.74,0.8292279700975352
+linear SVM,clustering_leiden_5.00,0.7738887105916091
+Nearest Neighbors,pca,0.7892152077659323
+Nearest Neighbors,clustering_leiden_0.10,0.43891419132291337
+Nearest Neighbors,clustering_leiden_0.36,0.6043232401656314
+Nearest Neighbors,clustering_leiden_0.62,0.5663064392255523
+Nearest Neighbors,clustering_leiden_0.87,0.6130806391675957
+Nearest Neighbors,clustering_leiden_1.13,0.6354243081808877
+Nearest Neighbors,clustering_leiden_1.39,0.6497478339570576
+Nearest Neighbors,clustering_leiden_1.65,0.7314630779848171
+Nearest Neighbors,clustering_leiden_1.91,0.6924510949069846
+Nearest Neighbors,clustering_leiden_2.16,0.6924139276501379
+Nearest Neighbors,clustering_leiden_2.42,0.7619256709474101
+Nearest Neighbors,clustering_leiden_2.68,0.7141613458343375
+Nearest Neighbors,clustering_leiden_2.94,0.7023141981475315
+Nearest Neighbors,clustering_leiden_3.19,0.7382327910289712
+Nearest Neighbors,clustering_leiden_3.45,0.7096498868915417
+Nearest Neighbors,clustering_leiden_3.71,0.7072401127576297
+Nearest Neighbors,clustering_leiden_3.97,0.757207157788471
+Nearest Neighbors,clustering_leiden_4.23,0.7214257334720129
+Nearest Neighbors,clustering_leiden_4.48,0.7950956574066073
+Nearest Neighbors,clustering_leiden_4.74,0.7808105474772141
+Nearest Neighbors,clustering_leiden_5.00,0.813801732352457
+RBF SVM,pca,0.8859594018210762
+RBF SVM,clustering_leiden_0.10,0.49562108778448183
+RBF SVM,clustering_leiden_0.36,0.6259860119958515
+RBF SVM,clustering_leiden_0.62,0.706042926174157
+RBF SVM,clustering_leiden_0.87,0.7836718260268984
+RBF SVM,clustering_leiden_1.13,0.7028749363232905
+RBF SVM,clustering_leiden_1.39,0.7514311429087593
+RBF SVM,clustering_leiden_1.65,0.7584102722067292
+RBF SVM,clustering_leiden_1.91,0.7161555297913683
+RBF SVM,clustering_leiden_2.16,0.7554068609204324
+RBF SVM,clustering_leiden_2.42,0.7893351387617537
+RBF SVM,clustering_leiden_2.68,0.7491879457096848
+RBF SVM,clustering_leiden_2.94,0.7658995368336751
+RBF SVM,clustering_leiden_3.19,0.7929951690821256
+RBF SVM,clustering_leiden_3.45,0.7977119471385622
+RBF SVM,clustering_leiden_3.71,0.780952380952381
+RBF SVM,clustering_leiden_3.97,0.7365614216701172
+RBF SVM,clustering_leiden_4.23,0.7268605478984159
+RBF SVM,clustering_leiden_4.48,0.7313472058178653
+RBF SVM,clustering_leiden_4.74,0.7997705997705998
+RBF SVM,clustering_leiden_5.00,0.8080503795721187
+LDA,pca,0.8361786361786362
+LDA,clustering_leiden_0.10,0.45153531934112473
+LDA,clustering_leiden_0.36,0.5636976676192362
+LDA,clustering_leiden_0.62,0.7233788433788434
+LDA,clustering_leiden_0.87,0.7051880798939623
+LDA,clustering_leiden_1.13,0.6117192448074801
+LDA,clustering_leiden_1.39,0.7509248437571574
+LDA,clustering_leiden_1.65,0.6978496725093821
+LDA,clustering_leiden_1.91,0.6417530998413351
+LDA,clustering_leiden_2.16,0.6441874098124099
+LDA,clustering_leiden_2.42,0.7038260021656605
+LDA,clustering_leiden_2.68,0.7074482039699431
+LDA,clustering_leiden_2.94,0.7178043525102349
+LDA,clustering_leiden_3.19,0.6765153468711342
+LDA,clustering_leiden_3.45,0.7190514407619671
+LDA,clustering_leiden_3.71,0.6860848773608184
+LDA,clustering_leiden_3.97,0.685383403146561
+LDA,clustering_leiden_4.23,0.602568344162547
+LDA,clustering_leiden_4.48,0.57065808646691
+LDA,clustering_leiden_4.74,0.6529600345717689
+LDA,clustering_leiden_5.00,0.5789419805925718
+Naive Bayes,pca,0.8579060917296211
+Naive Bayes,clustering_leiden_0.10,0.4875243968993968
+Naive Bayes,clustering_leiden_0.36,0.624453351659234
+Naive Bayes,clustering_leiden_0.62,0.7523085105535984
+Naive Bayes,clustering_leiden_0.87,0.7458535414978247
+Naive Bayes,clustering_leiden_1.13,0.7961552028218696
+Naive Bayes,clustering_leiden_1.39,0.8135802469135802
+Naive Bayes,clustering_leiden_1.65,0.6911389536389536
+Naive Bayes,clustering_leiden_1.91,0.7812727085143635
+Naive Bayes,clustering_leiden_2.16,0.8186393515331801
+Naive Bayes,clustering_leiden_2.42,0.7768331889928987
+Naive Bayes,clustering_leiden_2.68,0.781461760439377
+Naive Bayes,clustering_leiden_2.94,0.8075249614269578
+Naive Bayes,clustering_leiden_3.19,0.8132623645588216
+Naive Bayes,clustering_leiden_3.45,0.7547428003870835
+Naive Bayes,clustering_leiden_3.71,0.7732327226593375
+Naive Bayes,clustering_leiden_3.97,0.769219175417784
+Naive Bayes,clustering_leiden_4.23,0.6780401061407927
+Naive Bayes,clustering_leiden_4.48,0.7862344445677779
+Naive Bayes,clustering_leiden_4.74,0.7902198023795121
+Naive Bayes,clustering_leiden_5.00,0.8101588905603977
