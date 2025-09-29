@@ -1,6 +1,5 @@
 # Microglia Morphological Profiling
-
-This repository contains the code related to the paper **"Mapping human microglial morphological diversity via handcrafted and deep learning-derived image features"**.
+This repository contains the code related to the paper **[Mapping human microglial morphological diversity via handcrafted and deep learning-derived image features](https://doi.org/10.1101/2025.09.12.675829)**
 
 ## Summary
 
