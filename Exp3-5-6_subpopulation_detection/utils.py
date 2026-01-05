@@ -67,9 +67,12 @@ def feature_seprations_deep(df,chans):
     Fingerprints_to_use = dict()
     for chan in chans:
         Fingerprints_to_use[chan] = df.columns[df.columns.str.contains(f"Feature_{chan}")].tolist()
+
     Fingerprints_to_use["all"] = []
     for chan in chans:
         Fingerprints_to_use["all"] += Fingerprints_to_use[chan]
+    if "BF" in chans:
+        Fingerprints_to_use["not-BF"] = list(set(Fingerprints_to_use["all"]).difference(set(Fingerprints_to_use["BF"])))
 
     return Fingerprints_to_use
 
@@ -106,7 +109,8 @@ def sillhoute_score(estimator, X):
     # Make it negative since GridSearchCV expects a score to maximize
     labels = estimator.predict(X)
     return silhouette_score(X,labels)
-def run_pca(data_features, ind_train, ind_val, cols, n_pcs, seed, train_figure_path,feature_type,Fingerprints_to_use):
+def run_pca(data_features, ind_train, ind_val, cols, n_pcs, seed, train_figure_path,
+            feature_type,Fingerprints_to_use,chans_inorder,channel_to_use):
     """Run PCA on training and test data."""
     pca = PCA(n_components=n_pcs, random_state=seed)
     pca_pip = Pipeline(steps=[("pca", pca)])
@@ -129,15 +133,21 @@ def run_pca(data_features, ind_train, ind_val, cols, n_pcs, seed, train_figure_p
 
     if feature_type == "deep":
         ## aggeregate pca by channels
-        channs = list(Fingerprints_to_use.keys())
-        channs.remove("all")
+        if channel_to_use == "all":
+            channs = chans_inorder
+        elif channel_to_use == "not-BF":
+            channs = chans_inorder
+            channs.remove("BF")
+        else:
+            channs = channel_to_use
         agg_pca_weights = np.zeros((len(channs),pca_pip.named_steps.pca.n_components_))
         for ind,key in enumerate(channs):
             indices = np.where(np.in1d(pca_pip.feature_names_in_, np.array(Fingerprints_to_use[key])))[0]
             agg_pca_weights[ind] = abs_pca_weights[indices].mean(axis=0)
         
         g = sns.clustermap(data = agg_pca_weights,yticklabels = channs,
-                            xticklabels = ['PC{}'.format(i + 1) for i in range(pca_pip.named_steps.pca.n_components_)],figsize=(10,10),col_cluster=False)
+                            xticklabels = ['PC{}'.format(i + 1) for i in range(pca_pip.named_steps.pca.n_components_)],figsize=(10,10),col_cluster=False,
+                            row_cluster=(len(channs) > 1))
         g.figure.suptitle( "aggregated per channel contribution of each feature in PCs space")
         g.figure.savefig(os.path.join(train_figure_path,"aggregated per channel contribution of each feature in PCs space.png"))
         plt.close(g.figure)
@@ -494,8 +504,8 @@ def save_crops(df_umap_train,feature_type,staining,chans_inorder,crop_image_widt
         df["X"] = df.BBox_Left + (df.BBox_Width // 2)
         df["Y"] = df.BBox_Top + (df.BBox_Width // 2)
     
-    if staining == "CP":
-        chans_inorder = chans_inorder + ["BF"]
+    # if staining == "CP":
+    #     chans_inorder = chans_inorder + ["BF"]
         
 
 

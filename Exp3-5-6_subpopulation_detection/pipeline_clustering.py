@@ -114,7 +114,8 @@ def main(config_path):
     ## PCA
     ###############
     print("Running PCA...")
-    pca_pip, pca_train, pca_test = utils.run_pca(data_features, ind_train, ind_val, cols, n_PCs_clustering, seed,train_figure_path,feature_type,Fingerprints_to_use)
+    pca_pip, pca_train, pca_test = utils.run_pca(data_features, ind_train, ind_val, cols, n_PCs_clustering,
+     seed,train_figure_path,feature_type,Fingerprints_to_use,chans_inorder,channel_to_use)
     
     ###############
     ## harmonization
