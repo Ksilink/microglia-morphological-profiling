@@ -3,26 +3,21 @@
 
 import os
 import sys
-import json
-import pickle
 import numpy as np
 import pandas as pd
 import utils
 import plotly.express as px
-import plotly.graph_objects as go
 from sklearn.model_selection import train_test_split
 import plotly
+import json
 
-def load_config(config_path):
-    """Load configuration from JSON file."""
-    with open(config_path, 'r') as f:
-        config = json.load(f)
-    return config
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import common_utils
 
 def main(config_path):
     """Main function to run the pipeline profiling."""
     # Load configuration
-    config = load_config(config_path)
+    config = common_utils.load_config(config_path)
     
     # Create directories
     output_file = config.get('output_file')
@@ -44,8 +39,8 @@ def main(config_path):
     alldata = pd.read_feather(data_path)
     
     # Generate color map
-    color_discrete_map = utils.generate_color_map()
-    utils.save_color_map(color_discrete_map, params_path)
+    color_discrete_map = common_utils.generate_color_map()
+    common_utils.save_color_map(color_discrete_map, params_path)
     
     # Extract parameters from config
     harmonize = config.get('harmonize', False)
@@ -84,7 +79,7 @@ def main(config_path):
     
     
     ### seperate features by channel from deep data
-    Fingerprints_to_use = utils.feature_sepration(alldata,feature_type,chans_inorder,numeric_cols_metadata)
+    Fingerprints_to_use = common_utils.feature_sepration(alldata,feature_type,chans_inorder,numeric_cols_metadata)
     print(Fingerprints_to_use.keys())
         
     # Split features and metadata
@@ -124,7 +119,7 @@ def main(config_path):
     # Apply harmonization if requested
     if harmonize:
         print("Running harmony batch correction...")
-        data_train_for_clustering, data_test_for_clustering = utils.apply_harmony(
+        data_train_for_clustering, data_test_for_clustering = common_utils.apply_harmony(
             pca_train, pca_test, metadata, ind_train, ind_val, vars_use_harmony
         )
 
@@ -144,7 +139,7 @@ def main(config_path):
     ###############
     print("Running UMAP...")
     ### umap on PCA
-    visualizer, df_transformed_train, df_transformed_test = utils.run_umap(data_train_for_clustering, data_test_for_clustering, seed,metadata,ind_train,ind_val)
+    visualizer, df_transformed_train, df_transformed_test = common_utils.run_umap(data_train_for_clustering, data_test_for_clustering, seed,metadata,ind_train,ind_val)
     
     ###############
     ## clustering
