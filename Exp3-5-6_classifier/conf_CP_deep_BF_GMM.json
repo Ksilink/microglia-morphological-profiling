@@ -1,11 +1,11 @@
 {
-  "output_file": "CP_deep_GMM",
+  "output_file": "CP_deep_BF_GMM",
   "data_path": "../Data/PreProcessed/CP_deep/cleaned_norm_data.fth",
   "harmonize": false,
   "vars_use_harmony": "Plate",
   "n_PCs_clustering": 10,
   "feature_type": "deep",
-  "channel_to_use": ["not-BF"],
+  "channel_to_use": ["BF"],
   "color_range": 1,
   "seed": 42,
   "clustering_params": {

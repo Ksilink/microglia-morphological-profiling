@@ -5,7 +5,7 @@
   "vars_use_harmony": "Plate",
   "n_PCs_clustering": 10,
   "feature_type": "deep",
-  "channel_to_use": ["all"],
+  "channel_to_use": ["not-BF"],
   "color_range": 1,
   "seed": 42,
   "clustering_params": {
@@ -13,5 +13,5 @@
     "range_resolution": [0.1, 5],
     "distance_metric": "cosine"
   },
-  "chans_inorder": ["OrigDNA", "OrigMito", "OrigRNA", "OrigER", "OrigAGP"]
+  "chans_inorder": ["OrigDNA", "OrigMito", "OrigRNA", "OrigER", "OrigAGP","BF"]
 }
