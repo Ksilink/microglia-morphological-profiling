@@ -1,6 +1,12 @@
 # Microglia Morphological Profiling
 This repository contains the code related to the paper **[Mapping human microglial morphological diversity via handcrafted and deep learning-derived image features](https://doi.org/10.1101/2025.09.12.675829)**
 
+![Workflow](images/Picture2.png)
+
+![](images/Picture1.png)
+
+![](images/Picture3.png)
+
 ## Summary
 
 In this mansucript we describe a scalable method to analyze the activation states of human microglia derived from iPSCs using high-content imaging. By combining targeted immunofluorescence and broad morphological staining (Cell Painting), we captured detailed image-based features from thousands of individual cells. These features were analyzed using both classical and deep learning approaches to identify distinct microglial phenotypes. To better reflect the continuous nature of microglial activation, we applied a probabilistic clustering method (Gaussian Mixture Models) that allows cells to be partially assigned to multiple states. This approach revealed a rich landscape of microglial morphologies and their transitions in response to inflammatory stimuli. Our framework enables sensitive detection of microglial heterogeneity and could support future efforts in drug discovery and disease modeling.
